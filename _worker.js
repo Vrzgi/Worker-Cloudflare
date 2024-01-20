@@ -1,7 +1,7 @@
 // @armanibash
 import { connect } from 'cloudflare:sockets';
 
-let userID = '652da35d-b59d-4ab0-af59-cb90066dcc10';
+let userID = 'bca36697-126c-4888-9f3e-e17e8685dd20';
 
 const proxyIPs = ["[2001:67c:2b0:db32:0:1:681a:404]"]; // ['cdn-all.xn--b6gac.eu.org', 'cdn.xn--b6gac.eu.org', 'cdn-b100.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn.anycast.eu.org'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
@@ -94,7 +94,7 @@ export default {
 						});
 					}
 					default:
-						url.hostname = 'www.zula.ir';
+						url.hostname = 'www.github.com';
 						url.protocol = 'https:';
 						request = new Request(url, request);
 						return await fetch(request);
